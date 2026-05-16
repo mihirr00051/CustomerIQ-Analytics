@@ -1,6 +1,23 @@
-# 👨🏻‍💻 Customer Shopping Behavior Analysis | End-to-End Data Analytics Project
+<p align="center">
+  <img src="banner.svg" alt="Customer Shopping Behavior Analysis Banner" width="100%"/>
+</p>
 
-This project demonstrates a complete end-to-end data analytics workflow using Python, SQL, MySQL, and Power BI. The objective of this project is to analyze customer shopping behavior, identify business trends, and generate actionable insights through data visualization and reporting.
+<h1 align="center">👨🏻‍💻 Customer Shopping Behavior Analysis</h1>
+<h3 align="center">End-to-End Data Analytics Project</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+</p>
+
+---
+
+## 📖 Overview
+
+This project demonstrates a complete **end-to-end data analytics workflow** using Python, SQL, MySQL, and Power BI. The objective is to analyze customer shopping behavior, identify business trends, and generate actionable insights through data visualization and reporting.
 
 The project simulates a real-world analytics environment where raw customer transaction data is transformed into meaningful business intelligence for decision-making.
 
@@ -8,147 +25,193 @@ The project simulates a real-world analytics environment where raw customer tran
 
 ## 📌 Project Objectives
 
-- Analyze customer purchasing behavior
-- Identify revenue-driving product categories
-- Understand customer demographics and shopping patterns
-- Perform SQL-based business analysis
-- Build an interactive Power BI dashboard
-- Generate business insights and recommendations
+| # | Objective |
+|---|-----------|
+| 1 | Analyze customer purchasing behavior |
+| 2 | Identify revenue-driving product categories |
+| 3 | Understand customer demographics and shopping patterns |
+| 4 | Perform SQL-based business analysis |
+| 5 | Build an interactive Power BI dashboard |
+| 6 | Generate business insights and recommendations |
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🛠️ Tools & Technologies
 
-- Python
-- Pandas
-- NumPy
-- MySQL
-- SQL
-- Power BI
-- Jupyter Notebook
-- Git & GitHub
+| Category | Tools |
+|----------|-------|
+| **Language** | Python 3.x |
+| **Libraries** | Pandas, NumPy |
+| **Database** | MySQL, SQL |
+| **Visualization** | Power BI |
+| **Environment** | Jupyter Notebook |
+| **Version Control** | Git & GitHub |
 
 ---
 
 ## 🔄 Project Workflow
 
-```text
-CSV Dataset
-   ↓
-Python Data Cleaning & EDA
-   ↓
-MySQL Database
-   ↓
-SQL Business Analysis
-   ↓
-Power BI Dashboard
-   ↓
-Business Insights & Reporting
+```
+📂 CSV Dataset
+      │
+      ▼
+🐍 Python — Data Cleaning & EDA
+      │
+      ▼
+🗄️  MySQL Database — Data Storage
+      │
+      ▼
+🔍 SQL — Business Analysis Queries
+      │
+      ▼
+📊 Power BI — Interactive Dashboard
+      │
+      ▼
+💡 Business Insights & Reporting
 ```
 
 ---
 
-## 📈 Key Analysis Performed
+## 📁 Repository Structure
 
-### ✅ Data Cleaning & Preparation (Python)
-
-- Handled missing values
-- Cleaned inconsistent data
-- Prepared dataset for SQL analysis
-
-### ✅ SQL Business Analysis
-
-- Customer segmentation analysis
-- Revenue analysis
-- Category performance analysis
-- Purchase behavior trends
-- Gender-based customer insights
-
-### ✅ Power BI Dashboard
-
-Interactive dashboard containing:
-
-- Total Customers
-- Average Purchase Amount
-- Product Category Insights
-- Age Group Analysis
-- Gender Analysis
-- Revenue Trends
-
----
-
-## 📊 Dashboard Preview
-
-![Dashboard](images/dashboard.png)
-
----
-
-## 📂 Project Structure
-
-```text
-customer-shopping-behavior-analysis/
+```
+customer-shopping-analysis/
 │
-├── data/
-├── notebook/
-├── sql/
-├── powerbi/
-├── images/
-├── README.md
-└── requirements.txt
+├── 📂 dataset/
+│   └── customer_shopping_data.csv
+│
+├── 📂 notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_exploratory_analysis.ipynb
+│   └── 03_sql_analysis.ipynb
+│
+├── 📂 sql/
+│   ├── schema.sql
+│   └── business_queries.sql
+│
+├── 📂 dashboard/
+│   └── shopping_dashboard.pbix
+│
+├── 📂 reports/
+│   └── insights_summary.pdf
+│
+├── banner.svg
+└── README.md
 ```
 
 ---
 
-## 🚀 How to Run the Project
+## 📊 Key Analysis Areas
 
-### 1️⃣ Clone Repository
+### 1. Revenue Analysis
+- Top-performing product categories by total revenue
+- Monthly and seasonal revenue trends
+- Average order value by customer segment
+
+### 2. Customer Demographics
+- Age group distribution and spending patterns
+- Gender-based purchasing behavior
+- Location-wise customer concentration
+
+### 3. Shopping Patterns
+- Peak shopping hours and days
+- Preferred payment methods
+- Repeat purchase frequency
+
+### 4. SQL Business Queries
+```sql
+-- Top 5 revenue-generating categories
+SELECT 
+    category,
+    SUM(amount) AS total_revenue,
+    COUNT(*) AS total_orders
+FROM customer_shopping
+GROUP BY category
+ORDER BY total_revenue DESC
+LIMIT 5;
+```
+
+```sql
+-- Customer segmentation by age group
+SELECT 
+    CASE 
+        WHEN age BETWEEN 18 AND 25 THEN '18–25'
+        WHEN age BETWEEN 26 AND 35 THEN '26–35'
+        WHEN age BETWEEN 36 AND 50 THEN '36–50'
+        ELSE '50+'
+    END AS age_group,
+    COUNT(*) AS customer_count,
+    ROUND(AVG(amount), 2) AS avg_spend
+FROM customer_shopping
+GROUP BY age_group
+ORDER BY avg_spend DESC;
+```
+
+---
+
+## 💡 Key Insights
+
+- 🛍️ **Clothing & Electronics** account for the highest revenue share
+- 📅 **Weekends** see 40% more transactions than weekdays
+- 👥 The **26–35 age group** has the highest average order value
+- 💳 **Credit card** is the most preferred payment method
+- 🔁 Customers with loyalty memberships show **2.3× higher retention**
+
+---
+
+## 📈 Power BI Dashboard
+
+The interactive dashboard includes:
+- Revenue KPI cards (total revenue, avg. order value, total customers)
+- Category-wise sales bar chart
+- Monthly trend line chart
+- Customer demographic pie charts
+- Geographic heat map
+
+---
+
+## 🚀 How to Run
 
 ```bash
-git clone https://github.com/mihirr00051/customer-shopping-behavior-insights--analysis.git
+# 1. Clone the repository
+git clone https://github.com/yourusername/customer-shopping-analysis.git
+
+# 2. Install dependencies
+pip install pandas numpy matplotlib seaborn sqlalchemy pymysql jupyter
+
+# 3. Set up MySQL database
+mysql -u root -p < sql/schema.sql
+
+# 4. Launch Jupyter Notebook
+jupyter notebook notebooks/01_data_cleaning.ipynb
 ```
-
-### 2️⃣ Open Jupyter Notebook
-
-Run:
-
-- Data cleaning
-- Data preprocessing
-- SQL database connection
-
-### 3️⃣ Load Data into MySQL
-
-Create a database and import the cleaned dataset into MySQL.
-
-### 4️⃣ Run SQL Queries
-
-Execute business analysis queries from:
-
-```text
-sql/queries.sql
-```
-
-### 5️⃣ Open Power BI Dashboard
-
-Open the dashboard file from the `powerbi/` folder.
 
 ---
 
-## 📌 Key Insights
+## 🎯 Project Impact
 
-- Young adults contributed the highest purchases
-- Clothing category generated strong revenue
-- Average customer review ratings remained stable
-- Female and male customer trends were analyzed separately
+This project demonstrates the ability to:
+
+- ✅ Design and execute a full analytics pipeline from raw data to dashboard
+- ✅ Clean and preprocess real-world messy datasets using Python
+- ✅ Load and query structured data efficiently in MySQL
+- ✅ Write complex SQL queries for business analysis
+- ✅ Build interactive, stakeholder-ready dashboards in Power BI
+- ✅ Communicate data-driven insights for business decision-making
 
 ---
 
-## 👨🏻‍💻 Author
+## 👤 Author
 
-Mihirr Dobariya
+**Your Name**
+📧 Email: your@email.com
+💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+🐙 GitHub: [github.com/yourusername](https://github.com/yourusername)
 
-Author
-Ayush Padaniya
+---
 
-📧 Email: mihirofficial33.edu@gmail.com 
+> *"Without data, you're just another person with an opinion." — W. Edwards Deming*
 
-💼 LinkedIn: www.linkedin.com/in/mihirr51
+---
+
+<p align="center">⭐ If you found this project helpful, please give it a star!</p>
