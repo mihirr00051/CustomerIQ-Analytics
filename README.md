@@ -1,16 +1,18 @@
-<p align="center">
-  <img src="banner.svg" alt="Customer Shopping Behavior Analysis Banner" width="100%"/>
-</p>
-
 <h1 align="center">👨🏻‍💻 Customer Shopping Behavior Analysis</h1>
 <h3 align="center">End-to-End Data Analytics Project</h3>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Completed-2ea44f?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Domain-Data%20Analyst-378ADD?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-End--to--End%20Project-9B59B6?style=flat-square"/>
 </p>
 
 ---
@@ -201,12 +203,13 @@ This project demonstrates the ability to:
 
 ---
 
-## 👤 Author
+## 👨🏻‍💻 Author
+MIHIRR DOBARIYA
 
 **Your Name**
-📧 Email: your@email.com
-💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-🐙 GitHub: [github.com/yourusername](https://github.com/yourusername)
+📧 Email: mihirofficial33.edu@gmail.com 
+💼 LinkedIn: [linkedin.com/in/mihirr51](https://linkedin.com/in/mihirr51)
+🐙 GitHub: [github.com/mihirr00051](https://github.com/mihirr00051)
 
 ---
 
