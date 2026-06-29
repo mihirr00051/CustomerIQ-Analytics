@@ -82,7 +82,7 @@ The project simulates a real-world analytics environment where raw customer tran
 ## 📁 Repository Structure
 
 ```
-customer-shopping-analysis/
+CustomerIQ-Analytics/
 │
 ├── 📂 dataset/
 │   └── customer_shopping_data.csv
