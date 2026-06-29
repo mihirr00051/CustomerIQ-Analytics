@@ -1,8 +1,7 @@
 <p align="center">
-  <p align="center">
   <img src="images/customeriq-analytics-professional.png"
        alt="CustomerIQ Analytics Professional"
-       width="100%">
+       width="900">
 </p>
 <h1 align="center"> 🛒 Customeriq-Analytics </h1>
 <p align="center">
