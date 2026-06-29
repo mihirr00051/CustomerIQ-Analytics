@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.jpg" alt="Data Analytics Banner" width="100%"/>
+  <img src="Jun 29, 2026, 10_47_44 AM.png" alt="Data Analytics Banner" width="100%"/>
 </p>
 <h1 align="center"> 🛒 Customeriq-Analytics </h1>
 <p align="center">
